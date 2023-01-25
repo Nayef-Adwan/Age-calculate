@@ -20,6 +20,7 @@ jobs:
         with:
           channel:  'beta' # 'dev', 'alpha', default to: 'stable'
       - run: flutter pub get
+      - run: flutter run --no-sound-null-safety
  #### - run: flutter format --set-exit-if-changed
  #### - run: flutter analyze
       - run: flutter test
