@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true 
-        tags: docker push nayef98/age-calculater:tagname , docker push nayef98/age-calculater:${{git.run_number}}
+        tags: nayef98/age-calculater:tagname , docker push nayef98/age-calculater:${{git.run_number}}
 
 
      
