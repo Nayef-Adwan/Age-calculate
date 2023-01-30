@@ -23,9 +23,9 @@ jobs:
         password: fcbmunacm8016
           
     - name: build and push to docker hub  
-    #  run: docker push nayef98/age-calculater:tagname
+      run: docker push nayef98/age-calculater:tagname
 
-      uses: nayef98/age-calculater@tagname
+    #  uses: nayef98/age-calculater@tagname
 
 
 
