@@ -38,4 +38,20 @@ jobs:
       # Runs a set of commands using the runners shell
   ##    - name: Start release build
     ##    run: flutter build appbundle
-  
+    
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          
+     - name: build and push to docker hub  
+       uses: docker/build-push-action@v2
+       with:
+         context: .
+         push: true 
+         tags: docker push nayef98/age-calculater:tagname , docker push nayef98/age-calculater:${{git.run_number}}
+
+
+       
+         
