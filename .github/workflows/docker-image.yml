@@ -25,7 +25,7 @@ jobs:
     - name: build and push to docker hub  
     #  run: docker push nayef98/age-calculater:tagname
 
-      uses: nayef98/age-calculaterh@0.1.0
+      uses: nayef98/age-calculater@0.1.0
 
 
 
