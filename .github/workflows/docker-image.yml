@@ -23,7 +23,7 @@ jobs:
         password: ${{secrets.DOCKER_PASSWORD}}
           
     - name: build and push to docker hub  
-      run: docker push nayef98/age-calculater:tagname
+      run: docker push ${{secrets.DOCKER_USER}}/age-calculater:tagname
 
     #  uses: nayef98/age-calculater@tagname
 
