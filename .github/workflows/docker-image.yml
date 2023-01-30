@@ -22,8 +22,19 @@ jobs:
         username: nayef98
         password: fcbmunacm8016
           
-    - name: build and push to docker hub  
-      run: docker push ${{secrets.DOCKER_USER}}/age-calculater:tagname
+    - name: push to docker hub
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        push: true
+        tags:  nayef98/fl:latest, nayef98/fl:${{git.run_number}}
+      
+    
+    
+    
+    
+    
+    #  run: docker push ${{secrets.DOCKER_USER}}/age-calculater:tagname
 
     #  uses: nayef98/age-calculater@tagname
 
