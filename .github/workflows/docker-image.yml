@@ -27,7 +27,8 @@ jobs:
       with:
         context: .
         push: true
-        tags:  nayef98/age-calculator:latest
+        tags:  nayef98/age-calculator:tagname
+        
         
         
         
