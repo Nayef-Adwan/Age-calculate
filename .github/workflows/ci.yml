@@ -30,7 +30,7 @@ jobs:
         with:
           # 11
           flutter-version: "3.0.0"
-          channel: 'stable'
+         # channel: 'stable'
       # 12
       - name: Get dependencies
         run: flutter run -d chrome --no-sound-null-safety
