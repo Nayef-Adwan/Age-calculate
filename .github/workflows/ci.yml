@@ -30,7 +30,7 @@ jobs:
         with:
           # 11
           flutter-version: "3.0.0"
-      - run: --no-sound-null-safety
+      #- run: --no-sound-null-safety
       - run: flutter pub get
       #- run: flutter test
       - run: flutter build apk --debug --split-per-abi
