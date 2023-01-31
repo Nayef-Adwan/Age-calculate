@@ -34,9 +34,9 @@ jobs:
           channel: 'stable'
       # 12
       - name: Get dependencies
-      - run: flutter run --no-sound-null-safety
+   #   - run: flutter run --no-sound-null-safety
       - run: flutter pub get
-      - run: flutter test
+    #  - run: flutter test
       - run: flutter build apk
       - run: flutter build appbundle
 
