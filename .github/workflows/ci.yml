@@ -37,8 +37,8 @@ jobs:
    #   - run: flutter run --no-sound-null-safety
       - run: flutter pub get
     #  - run: flutter test
-      - run: flutter build apk
-      - run: flutter build appbundle
+      #- run: flutter build apk
+      #- run: flutter build appbundle
 
       # Runs a set of commands using the runners shell
   ##    - name: Start release build
