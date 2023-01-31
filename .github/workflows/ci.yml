@@ -5,12 +5,18 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+  
   # 3
   workflow_dispatch:
 
 # 4
 jobs:
+  test-stable:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
   # 5
   build:
     # 6
