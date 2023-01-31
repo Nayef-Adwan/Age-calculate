@@ -33,7 +33,8 @@ jobs:
           channel: 'stable'
       # 12
       - name: Get dependencies
-        run: flutter pub get
+        run: flutter run --no-sound-null-safety
+      # -run: flutter pub get
 
       # Runs a set of commands using the runners shell
   ##    - name: Start release build
